@@ -57,6 +57,9 @@ for(var i=0; i<warriors.length; i++){
     if(warriors[i].health<10) {
         continue;
     }
+    if(warriors[i].warrior===false) {
+        continue;
+    }
     var ele = document.createElement("div");
     var nameEle=document.createElement("h2");
     var damageEle=document.createElement("h4");
